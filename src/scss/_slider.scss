@@ -1,0 +1,51 @@
+
+#carousel-area {
+    .btn-lg {
+        margin: 10px;
+    }
+
+    .carousel-item .carousel-caption {
+        .carousel-inner .active {
+            opacity: 1;
+        }
+
+        h3 {
+            @media (max-width: 767px) {
+                font-size: 12px;
+            }
+            font-size: 50px;
+            margin-bottom: 15px;
+            color: #fff;
+            font-weight: 700;
+        }
+
+        h5 {
+            color: #fff;
+            line-height: 24px;
+            font-weight: 400;
+            margin-bottom: 30px;
+            font-size: 16px;
+            font-family: "Rubik", sans-serif;
+        }
+
+        top: 28%;
+        right: 10%;
+        left: 10%;
+        text-shadow: none;
+    }
+    #carousel-slider{
+        a i.fa::before{
+            opacity: .5;
+            border: 2px solid $mainborderColor;
+            background-color: $mainBckground;
+            border-radius: 20px;
+            display: inline-block;
+            padding: 10px;
+        }
+        a i.fa{
+            color: $typografyColor;
+        }
+    }
+
+}
+

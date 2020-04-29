@@ -1,0 +1,32 @@
+#services{
+     .section-title{
+
+     }
+    .service-box {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        .service-icon{
+            font-size: 32px;
+            color: $hoverlinkColor;
+            float: left;
+            margin-top: 5px;
+            .fa-gears:before, .fa-cogs:before {
+                content: "\f085";
+            }
+
+        }
+        .service-content {
+            h4{
+                font-size: 18px;
+                margin-bottom: 10px;
+                font-weight: 700;
+                transition: all 0.4s ease-in-out;
+                -moz-transition: all 0.4s ease-in-out;
+                -webkit-transition: all 0.4s ease-in-out;
+                -o-transition: all 0.4s ease-in-out;
+                color:$typografyColor;
+            }
+            padding-left: 48px;
+        }
+    }
+}

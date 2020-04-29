@@ -1,0 +1,92 @@
+#pricing {
+  padding: 30px 0;
+	ul {
+	  list-style-type: none;
+	}
+	.pricing-table-item {
+	  border-radius: 4px;
+	  text-align: center;
+	  position: relative;
+	  margin: 15px 0;
+	  box-shadow: 0px 2px 18px 0px rgba(198, 198, 198, 0.3);
+	  -webkit-transition: all 0.2s linear;
+	  -moz-transition: all 0.2s linear;
+	  -o-transition: all 0.2s linear;
+	  transition: all 0.2s linear;
+     &.table-active {
+		  background: $secondBckground;
+		  .plan-signup .btn-common:hover {
+			  color: $typografyInverseColor !important;
+              background: $secondBckground;
+			}
+		  .plan-signup .btn-common {
+			  background: $mainBckground;
+			}
+		  .plan-list li {
+			  color: $mainBckground;
+			  i {
+				  margin-right: 10px;
+				}
+		   }
+		  .plan-price{
+		  .interval {
+			  color: $typografyInverseColor;
+		  }
+		  .price-value {
+			  color: #fff;
+			  span {
+				  color: $typografyInverseColor;
+				}
+			}
+		  }
+		  .plan-name h3 {
+			  color: $typografyInverseColor;
+			}
+		}
+	  .plan-signup {
+		  padding: 15px 0px 30px;
+		  	a {
+			  text-transform: uppercase;
+			}
+		}
+	  .plan-list li {
+		  padding: 10px;
+		  font-size: 15px;
+		  letter-spacing: 1px;
+		  	i {
+			  margin-right: 10px;
+			}
+		}
+	  .plan-name {
+		  padding: 25px;
+		  margin-bottom: 0px;
+		  .plan-price {
+			  margin-bottom: 30px;
+			  .interval {
+				  line-height: 16px;
+				  font-size: 14px;
+				  font-weight: 700;
+			  }
+			  .price-value {
+				  font-size: 50px;
+				  line-height: 76px;
+				  font-weight: 700;
+				  color: $typografyColor;
+				  span {
+					  font-size: 22px;
+					  font-weight: 400;
+					  line-height: 18px;
+				  }
+				}
+
+			}
+		  h3 {
+			  font-size: 22px;
+			  line-height: 24px;
+			  margin: 0;
+			  color: $typografyColor;
+			}
+		}
+	}
+
+}

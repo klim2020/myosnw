@@ -1,0 +1,300 @@
+@import "vars";
+
+@import "slider";
+@import "menu";
+@import "thumbnail";
+@import "services";
+@import "portfolio";
+@import "features";
+@import "achievments";
+@import "team";
+@import "pricing";
+@import "contact";
+@import "footer";
+
+body {
+    color: $typografyColor;
+    background: $mainBckground;
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0px;
+}
+
+.section {
+    padding: 30px 0;
+}
+img {
+    width: 100%;
+}
+#navigation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10em;
+    ul{
+        text-decoration: none;
+        background-color: cyan;
+    }
+}
+
+#content {
+    margin-left: 10em;
+}
+
+a {
+    color: $linkColor;
+    -moz-transition: 0.2s ease-in;
+    -o-transition: 0.2s ease-in;
+    -webkit-transition: 0.2s ease-in;
+    -ms-transition: 0.2s ease-in;
+    transition: 0.2s ease-in;
+    letter-spacing: 0px;
+    outline: 0 !important;
+    &:hover, &:active, &:focus{
+        color: $hoverlinkColor !important;
+        text-decoration: none;
+    }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: $typografyColor;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    letter-spacing: 0px;
+    margin-top: 0;
+}
+
+.section-title {
+    color: $typografyColor;
+    font-size: 38px;
+    text-align: center;
+    letter-spacing: 1px;
+    line-height: 1;
+    margin-bottom: 48px;
+    padding: 0 10px;
+    position: relative;
+}
+
+.section-padding {
+    padding: 60px 0!important;
+}
+
+p {
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 25px;
+    color: $typografyColor;
+    letter-spacing: 0px;
+    margin-bottom: 10px;
+}
+
+
+
+/* Default Button */
+.btn-common, .btn-common:active, .btn-common:focus {
+    color: $linkColor;
+    border: 2px solid $mainborderColor;
+    background: transparent;
+}
+
+.btn-common:hover {
+    color: #fff !important;
+    background: $secondBckground;
+    border: 2px solid $mainborderColor;
+}
+
+.btn-border {
+    border: 2px solid #fff;
+    color: #fff;
+}
+
+.btn-border:hover {
+    background: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+    border-color: #ffffff;
+}
+
+.btn-radius {
+    border-radius: 30px;
+}
+
+.btn-filled {
+    background: $linkColor;
+    border: 2px solid $linkColor;
+    color: #fff;
+}
+
+.btn-filled:hover {
+    background: $linkColor;
+}
+
+.btn-default-filled, .btn-default-filled:active, .btn-default-filled:focus {
+    color: #fff;
+    background:$linkColor;
+    border: 2px solid $linkColor;
+}
+
+.btn-default-filled:hover {
+    color: #fff;
+    background:$linkColor;
+    border: 2px solid $linkColor;
+}
+
+/* / End Default Button */
+/* Success Button */
+.btn-success, .btn-success:active, .btn-success:focus {
+    color: #87c056;
+    border: 2px solid #87c056;
+    background: transparent;
+}
+
+.btn-success:hover {
+    color: #fff;
+    background: #87c056;
+    border: 2px solid #87c056;
+}
+
+.btn-success-filled, .btn-success-filled:active, .btn-success-filled:focus {
+    color: #fff;
+    background: #87c056;
+    border: 2px solid #87c056;
+}
+
+.btn-success-filled:hover {
+    color: #fff;
+    background: #74a44a;
+    border: 2px solid #74a44a;
+}
+
+/* End Success Button */
+/*  Standard Buttons */
+.button-title {
+    border-bottom: 1px solid #ffffff;
+    color: #ffffff;
+    opacity: 0.2;
+    text-align: left;
+}
+
+.button-title span {
+    display: inline-block;
+    font-size: 14px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.btn {
+    font-size: 14px;
+    padding: 11px 27px;
+}
+
+.btn:focus {
+    outline: none;
+}
+
+.std-btn {
+    margin-bottom: 20px;
+}
+
+.icon-cloud-download {
+    margin-right: 13px;
+    font-size: 16px;
+    vertical-align: -2px;
+}
+
+.btn-primary {
+    margin-right: 20px;
+    border: none;
+}
+
+.learn-more .btn {
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2.33px;
+}
+
+.read-more .btn {
+    font-weight: 600;
+    min-width: 125px;
+}
+
+/* Small Buttons */
+.btn-sm {
+    font-size: 12px;
+    min-width: 122px;
+    padding: 5px 11px;
+}
+
+.learn-more .btn.btn-sm {
+    font-size: 11px;
+}
+
+.read-more .btn.btn-sm {
+    min-width: 94px;
+}
+
+/* large Buttons */
+.btn-lg {
+    font-size: 18px;
+    min-width: 198px;
+    padding: 15px 11px;
+}
+
+.learn-more .btn-lg {
+    font-size: 17px;
+}
+
+.learn-more2 .btn-lg {
+    min-width: 170px;
+}
+
+/*Extra large Buttons */
+.btn-xlg {
+    font-size: 22px;
+    min-width: 233px;
+    padding: 22px 27px;
+    font-weight: 600;
+}
+
+.learn-more .btn-xlg {
+    font-size: 19px;
+}
+
+.read-more .btn-xlg {
+    min-width: 186px;
+    font-size: 21px;
+}
+
+
+/*back to top btn*/
+
+a.back-to-top {
+    display: none;
+    position: fixed;
+    bottom: 18px;
+    right: 15px;
+    text-decoration: none;
+    i {
+        display: block;
+        font-size: 22px;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        color: $inverseLinkColor;
+        background: $hoverlinkColor;
+        border-radius: 2px;
+        text-align: center;
+        transition: all 0.2s ease-in-out;
+        -moz-transition: all 0.2s ease-in-out;
+        -webkit-transition: all 0.2s ease-in-out;
+        -o-transition: all 0.2s ease-in-out;
+        box-shadow: 0 0 4px rgba(0, 0, 0, 0.14), 0 4px 8px rgba(0, 0, 0, 0.28);
+    }
+    &:hover, &:focus {
+        text-decoration: none;
+    }
+}
+

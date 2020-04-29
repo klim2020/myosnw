@@ -1,0 +1,120 @@
+.navbar {
+    padding: 0;
+    .navbar-brand{
+        img {
+            width: 68%;
+            max-width: 200px;
+        }
+    }
+    .mobile-menu {
+        display: none;
+    }
+
+
+
+
+
+    .navbar-nav {
+        .nav-link {
+        color: $typografyInverseColor;
+        font-size: 14px;
+        margin-right: 18px;
+        font-weight: 400;
+        padding: 18px 0px;
+        }
+        .active a{
+            color: $hoverlinkColor;
+        }
+    }
+    .slicknav_menu {
+        display: none;
+        @media screen and (max-width: 991px){
+            display: block;
+        }
+    }
+    .slicknav_btn {
+        border-color: $linkColor;
+    }
+
+    .fadeInUpMenu {
+        -webkit-animation-name: fadeInUpMenu;
+        animation-name: fadeInUpMenu;
+    }
+
+    .slicknav_btn {
+        border-color: $mainborderColor;
+    }
+
+    .slicknav_menu .slicknav_icon-bar {
+        background: $linkColor;
+    }
+
+    /* only small tablets */
+    @media (min-width: 768px) and (max-width: 991px) {
+        #nav-main li a.nav-link {
+            padding-top: 18px;
+        }
+    }
+
+    .navbar-toggler {
+        display: none;
+    }
+
+    .mobile-menu {
+        display: none;
+    }
+
+    .slicknav_menu {
+        display: none;
+    }
+
+    @media screen and (max-width: 991px) {
+        .navbar-header {
+            width: 100%;
+        }
+        .navbar-brand {
+            position: absolute;
+            padding: 15px 15px;
+            top: 0;
+        }
+        .navbar-brand img {
+            width: 75%;
+        }
+        .slicknav_menu {
+            display: block;
+        }
+        .slicknav_nav a:hover,
+        .slicknav_nav a:focus,
+        .slicknav_nav .active {
+            color: $hoverlinkColor !important;
+            outline: none;
+            background: #f8f9fa;
+        }
+    }
+
+
+    &.top-nav-collapse {
+        .nav-item a{
+            color:$typografyColor;
+        }
+        .active{
+            a{
+                color:$hoverlinkColor;
+            }
+        }
+
+        background: $mainBckground;
+        z-index: 999999;
+        top: 0px !important;
+        min-height: 58px;
+        box-shadow: 0px 3px 6px 3px rgba(0, 0, 0, 0.06);
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+        -webkit-animation-name: fadeInDown;
+        animation-name: fadeInDown;
+        background: $mainBckground !important;
+    }
+
+}

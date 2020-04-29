@@ -1,0 +1,36 @@
+#features{
+    .featured-box-item {
+        margin-bottom: 40px;
+
+        .featured-icon {
+            float: left;
+            i {
+                width: 70px;
+                height: 70px;
+                color: $hoverlinkColor;
+                border: 2px solid $inverseBorderColor;
+                text-align: center;
+                line-height: 70px;
+                font-size: 30px;
+                border-radius: 10px;
+                display: inline-block;
+                transition: all 0.4s ease;
+                -moz-transition: all 0.4s ease;
+                -webkit-transition: all 0.4s ease;
+                -o-transition: all 0.4s ease;
+            }
+        }
+        .featured-content {
+            padding-left: 88px;
+            h4 {
+                font-size: 15px;
+                text-transform: uppercase;
+                margin-bottom: 10px;
+            }
+        }
+        &:hover .featured-icon i {
+            background: $secondBckground;
+            color: $inverseLinkColor;
+        }
+    }
+}

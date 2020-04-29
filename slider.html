@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+
+	<!-- Bootstrap CSS -->
+      <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" >
+
+      <!-- Slicknav -->
+      <link rel="stylesheet" type="text/css" href="css/slicknav.css">
+
+      <!-- Animate -->
+      <link rel="stylesheet" type="text/css" href="css/animate.css">
+
+      <!--FontAwesome -->
+      <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	  
+  </head>
+  <body>
+<style>
+
+#carousel-area {
+  background: #2c3e50;
+}
+
+#carousel-area .btn-lg {
+  margin: 10px;
+}
+
+#carousel-area .carousel-inner .active {
+  opacity: 1;
+}
+
+#carousel-area .carousel-inner .active.left,
+#carousel-area .carousel-inner .active.right {
+  left: 0;
+  opacity: 0;
+  z-index: 1;
+}
+
+#carousel-area .carousel-inner .next.left,
+#carousel-area .carousel-inner .prev.right {
+  opacity: 1;
+}
+
+#carousel-area .carousel-control {
+  z-index: 2;
+}
+
+#carousel-area .carousel-item .carousel-caption {
+  top: 28%;
+  right: 10%;
+  left: 10%;
+  text-shadow: none;
+}
+
+#carousel-area .carousel-item .carousel-caption h5 {
+  color: #fff;
+  line-height: 24px;
+  font-weight: 400;
+  margin-bottom: 30px;
+  font-size: 16px;
+  font-family: "Rubik", sans-serif;
+}
+
+#carousel-area .carousel-item .carousel-caption h3 {
+  font-size: 50px;
+  margin-bottom: 15px;
+  color: #fff;
+  font-weight: 700;
+}
+
+#carousel-area .carousel-indicators {
+  bottom: 5px;
+}
+
+#carousel-area .carousel-indicators li {
+  border-radius: 0px;
+  width: 32px;
+  height: 5px;
+  margin: 0 5px;
+  background: rgba(253, 254, 255, 0.8);
+  border: none;
+  transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+}
+
+.carousel-post {
+  margin-right: 15px;
+}
+
+.carousel-post h5 {
+  margin-top: 20px;
+}
+
+
+
+</style>
+<script>
+
+
+
+</script>
+  <!-- Header Area wrapper Starts -->
+  <header id="header-wrap">
+
+      <!-- sliders -->
+      <div id="sliders">
+          <div class="full-width">
+              <!-- light slider -->
+              <div id="light-slider" class="carousel slide">
+                  <div id="carousel-area">
+                      <div id="carousel-slider" class="carousel slide" data-ride="carousel">
+                          <ol class="carousel-indicators">
+                              <li data-target="#carousel-slider" data-slide-to="0" class="active"></li>
+                              <li data-target="#carousel-slider" data-slide-to="1"></li>
+                              <li data-target="#carousel-slider" data-slide-to="2"></li>
+                          </ol>
+                          <div class="carousel-inner" role="listbox">
+                              <div class="carousel-item active">
+                                  <img src="img/slider/bg-1.jpg" alt="">
+                                  <div class="carousel-caption">
+                                      <h3 class="slide-title animated fadeInDown"><span>Helium</span> - Bootstrap 4 UI Kit</h3>
+                                      <h5 class="slide-text animated fadeIn">Lorem ipsum dolor sit amet, consectetuer adipiscing elit<br> Curabitur ultricies nisi Nam eget dui. Etiam rhoncus</h5>
+                                      <a href="#" class="btn btn-lg btn-common animated fadeInUp">Get Started</a>
+                                      <a href="#" class="btn btn-lg btn-border animated fadeInUp">Learn More</a>
+                                  </div>
+                              </div>
+                              <div class="carousel-item">
+                                  <img src="img/slider/bg-2.jpg" alt="">
+                                  <div class="carousel-caption">
+                                      <h3 class="slide-title animated fadeInDown"><span>Cutting-edge</span> Features</h3>
+                                      <h5 class="slide-text animated fadeIn">Lorem ipsum dolor sit amet, consectetuer adipiscing elit<br> Curabitur ultricies nisi Nam eget dui. Etiam rhoncus</h5>
+                                      <a href="#" class="btn btn-lg btn-common animated fadeInUp">Download Now</a>
+                                  </div>
+                              </div>
+                              <div class="carousel-item">
+                                  <img src="img/slider/bg-3.jpg" alt="">
+                                  <div class="carousel-caption">
+                                      <h3 class="slide-title animated fadeInDown"><span>100+</span> UI Blocks & Components</h3>
+                                      <h5 class="slide-text animated fadeIn">Lorem ipsum dolor sit amet, consectetuer adipiscing elit<br> Curabitur ultricies nisi Nam eget dui. Etiam rhoncus</h5>
+                                      <a href="#" class="btn btn-lg btn-border animated fadeInUp">Get Started</a>
+                                      <a href="#" class="btn btn-lg btn-common animated fadeInUp">Download</a>
+                                  </div>
+                              </div>
+                          </div>
+                          <a class="carousel-control-prev" href="#carousel-slider" role="button" data-slide="prev">
+                              <i class="fa fa-chevron-left"></i>
+                          </a>
+                          <a class="carousel-control-next" href="#carousel-slider" role="button" data-slide="next">
+                              <i class="fa fa-chevron-right"></i>
+                          </a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <!-- End sliders -->
+
+  </header>
+  <!-- Header Area wrapper End -->
+
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script src="js/jquery-min.js"></script>
+      <script src="js/popper.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/jquery.slicknav.js"></script>
+      <script src="js/jquery.nav.js"></script>
+  </body>
+</html>

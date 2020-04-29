@@ -1,0 +1,92 @@
+#team{
+    figure {
+        position: relative;
+        cursor: pointer;
+		&:hover{
+			.image-overlay {
+			  opacity: 1 !important;
+			}
+			.info-text {
+			  -webkit-transform: translateY(0px) !important;
+			  transform: translateY(0px) !important;
+			}
+			.social-icons {
+			  -webkit-transform: translateY(0px) !important;
+			  transform: translateY(0px) !important;
+			}
+
+
+		}
+        .image-overlay {
+            height: 100%;
+            position: absolute;
+            top: 0;
+            background: $secondBckground;
+            opacity: 0;
+            width: 100%;
+            transition: all 0.3s ease-in-out 0s;
+            -moz-transition: all 0.3s ease-in-out 0s;
+            -webkit-transition: all 0.3s ease-in-out 0s;
+            -o-transition: all 0.3s ease-in-out 0s;
+            .overlay-text {
+                color: #ffffff;
+                padding-top: 30%;
+                .info-text {
+                    -webkit-transform: translateY(50px);
+                    transform: translateY(50px);
+                    transition: all 0.3s ease-in-out 0s;
+                    -moz-transition: all 0.3s ease-in-out 0s;
+                    -webkit-transition: all 0.3s ease-in-out 0s;
+                    -o-transition: all 0.3s ease-in-out 0s;
+					 strong {
+					  display: block;
+					  font-size: 22px;
+					  font-weight: 700;
+					  margin-bottom: 5px;
+					}
+					span {
+					  font-size: 14px;
+					  font-weight: 400;
+					  font-style: italic;
+					}
+                }
+                .small-divider {
+                    margin-bottom: 30px;
+                    border-color: $typografyInverseColor;
+                    margin-top: 30px;
+                    width: 50px;
+                }
+                .social-icons {
+                    padding-left: 0;
+                    -webkit-transform: translateY(-50px);
+                    transform: translateY(-50px);
+                    transition: all 0.3s ease-in-out 0s;
+                    -moz-transition: all 0.3s ease-in-out 0s;
+                    -webkit-transition: all 0.3s ease-in-out 0s;
+                    -o-transition: all 0.3s ease-in-out 0s;
+                    li {
+                        display: inline-block;
+                        margin: 0 10px;
+						a i {
+						  font-size: 24px;
+						  color: #fff;
+						}
+                    }
+					.fa-facebook:hover {
+					  color: #3b5998;
+					}
+					.fa-twitter:hover {
+					  color: #55acee;
+					}
+
+					.fa-instagram:hover {
+					  color: #fb3958;
+					}
+
+                }
+            }
+        }
+    }
+}
+
+
